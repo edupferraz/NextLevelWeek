@@ -4,6 +4,7 @@
     --title-color:#323153;
     --primary-color: #34cb79;
     --button-hover-color: #2fb86e;
+    --bg-color-grey: #f0f0f5;
 }
 
 
@@ -20,7 +21,7 @@ html{
 }
 
 body{
-    background: #f0f0f5;
+    background: var(--bg-color-grey);
     -webkit-font-smoothing: antialised;
 }
 

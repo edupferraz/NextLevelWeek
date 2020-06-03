@@ -5,6 +5,8 @@
 
 @media(max-width: 905px){
 
+
+    /* Media Query Index.html*/
     #page-home{
         background-position-x: 70vw;
     }
@@ -35,6 +37,14 @@
         text-align: center;
         align-items: center;
     }
+
+
+    /* Media Query search-results.html */
+    #page-search-results .cards{
+        grid-template-columns: 1fr;
+    }
+
+    
 }
 
 

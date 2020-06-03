@@ -46,6 +46,7 @@
 }
 
 /* Configurações Formulário */
+
 form{
 
     background-color: white;
@@ -123,10 +124,73 @@ form .field-group .field + .field{
 }
 
 
+
+
+/* Form itens */
+
+.items-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    /* Atributo específico para o grid - parecido com a margin*/
+    gap: 16px;
+}
+
+.items-grid li{
+    background-color: #cccccc73;
+    list-style: none;
+
+    border: 2px solid #cccccc;
+    border-radius: 8px;
+    
+    height: 140px;
+
+    padding: 32px 24px 16px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    text-align: center;
+
+    /* Visual de elemento clicável - mesmo atributo de links*/
+    cursor: pointer;
+}
+
+.items-grid li span{
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+
+    color: var(--tittle-color);
+}
+
+.items-grid li.selected{
+    background-color: #e1faec;
+    border: 2px solid #34cb79;
+}
+
+.items-grid li img,
+.items-grid li span{
+    pointer-events: none;
+}
+
+
+
+
+
+
+
+
+
+/* Form Button */
+
 form button{
     width: 260px;
     height: 56px;
-    margin-top: 40px;
+    margin: 40px 0px 0px 345px;
 
     background-color: var(--primary-color);
     border: 0;
