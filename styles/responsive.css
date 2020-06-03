@@ -1,0 +1,55 @@
+/* Css direcionado para Responsividade da Página */
+/*Aplicar responsividade por conta própria*/
+
+/* Até 900px */
+
+@media(max-width: 905px){
+
+    #page-home{
+        background-position-x: 70vw;
+    }
+
+    #page-home .content a{
+        align-items: center;
+        text-align: center;
+    }
+
+    #page-home header a{
+        position: absolute;
+        bottom: 40px;
+        left: 50%;
+
+        transform: translateX(-50%);
+    }
+
+    #page-home header #logo{
+        position: absolute;
+        top: 40px;
+        left: 50%;
+
+        transform: translateX(-50%);
+    }
+
+    #page-home main{
+        margin: auto;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+
+/* A partir de 1700px*/
+
+@media(min-width:1700px){
+
+    #page-home{
+        background-position-x: 42vw;
+    }
+}
+
+@media(max-height:760px){
+
+        #page-home{
+            background-position-y: 140px;
+        }
+}
