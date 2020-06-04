@@ -1,0 +1,72 @@
+/* Css direcionado para Responsividade da Página */
+/*Aplicar responsividade por conta própria*/
+
+/* Até 900px */
+
+@media(max-width: 905px){
+
+
+    /* Media Query Index.html*/
+    #page-home{
+        background-position-x: 70vw;
+    }
+
+    #page-home .content a{
+        align-items: center;
+        text-align: center;
+    }
+
+    #page-home header a{
+        position: absolute;
+        bottom: 40px;
+        left: 50%;
+
+        transform: translateX(-50%);
+    }
+
+    #page-home header #logo{
+        position: absolute;
+        top: 40px;
+        left: 50%;
+
+        transform: translateX(-50%);
+    }
+
+    #page-home main{
+        margin: auto;
+        text-align: center;
+        align-items: center;
+    }
+
+
+    /* Media Query search-results.html */
+    #page-search-results .cards{
+        grid-template-columns: 1fr;
+    }
+
+    #page-create-point .field-group{
+        flex-direction: column;
+    }
+
+    #page-create-point .field-group .field + .field{
+        margin-left: 0px;
+    }
+    
+}
+
+
+/* A partir de 1700px*/
+
+@media(min-width:1700px){
+
+    #page-home{
+        background-position-x: 42vw;
+    }
+}
+
+@media(max-height:760px){
+
+        #page-home{
+            background-position-y: 140px;
+        }
+}

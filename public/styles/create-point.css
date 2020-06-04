@@ -1,0 +1,219 @@
+#page-create-point{
+    width: 90%;
+    max-width: 1100px;
+
+    /* Alinhamento com a janela*/
+    margin: 0 auto;
+}
+
+#page-create-point header{
+    margin-top: 48px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#page-create-point header a{
+
+    color: var(--tittle-color);
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+}
+
+#page-create-point header span{
+
+    margin-right: 16px;
+
+    background-image: url('../assets/arrow-left.svg');
+    
+    display: flex;
+
+    width: 20px;
+    height: 24px;
+}
+
+
+
+#page-create-point header #logo{
+
+    background: url('../assets/logo.svg') no-repeat;
+    
+    width: 190px;
+    height: 60px;
+}
+
+/* Configurações Formulário */
+
+form{
+
+    background-color: white;
+
+    padding: 64px;
+
+    border-radius: 10px;
+    margin-top: 50px;
+
+    max-width: 730px;
+
+    box-sizing: border-box;
+
+    margin: 50px auto;
+}
+
+form h1{
+    font-size: 36px;
+}
+
+form fieldset{
+    margin-top: 64px;
+    border: 0;
+}
+
+form legend{
+    margin-bottom: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+}
+
+form legend h2{
+    font-size: 24px;
+}
+
+form legend span{
+    font-size: 15px;
+    color: var(--title-color)
+}
+
+form .field{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 24px;
+}
+
+form .field-group{
+    display: flex;
+    
+}
+
+form input, form select{
+    background-color: #f0f0f5;
+
+    border: 0;
+    padding: 16px 24px;
+    font-size: 16px;
+
+    outline-color: var(--primary-color);
+
+    border-radius: 8px;
+
+}
+
+form select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+form label{
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+/* Modo para referenciar atributo HTML sem a necessidade de uma class*/
+
+form .field-group .field + .field{
+    margin-left: 24px;
+}
+
+
+
+
+/* Form itens */
+
+.items-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    /* Atributo específico para o grid - parecido com a margin*/
+    gap: 16px;
+}
+
+.items-grid li{
+    background-color: #cccccc73;
+    list-style: none;
+
+    border: 2px solid #cccccc;
+    border-radius: 8px;
+    
+    height: 140px;
+
+    padding: 32px 24px 16px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    text-align: center;
+
+    /* Visual de elemento clicável - mesmo atributo de links*/
+    cursor: pointer;
+}
+
+.items-grid li span{
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+
+    color: var(--tittle-color);
+}
+
+.items-grid li.selected{
+    background-color: #e1faec;
+    border: 2px solid #34cb79;
+}
+
+.items-grid li img,
+.items-grid li span{
+    pointer-events: none;
+}
+
+
+
+
+
+
+
+
+
+/* Form Button */
+
+form button{
+    width: 260px;
+    height: 56px;
+    margin: 40px 0px 0px 345px;
+
+    background-color: var(--primary-color);
+    border: 0;
+    border-radius: 8px;
+    color: white;
+
+    font-weight: bold;
+    font-size: 16px;
+
+    transition: 400ms;
+}
+
+form button:hover{
+    background-color: var(--button-hover-color);
+}
