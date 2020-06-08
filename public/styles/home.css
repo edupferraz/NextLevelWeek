@@ -24,18 +24,9 @@
     justify-content: space-between;
 }
 
-#page-home header #logo{
-
-    background: url('../assets/logo.svg') no-repeat;
-    
-    width: 190px;
-    height: 60px;
-}
-
 #page-home header a {
     display: flex;
 
-    color: var(--title-color);
     font-weight: 700;
 }
 

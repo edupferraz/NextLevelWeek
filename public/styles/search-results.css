@@ -1,12 +1,13 @@
 body::after{
 
     content: "";
-    position: fixed;
+    position: absolute;
     background: white;
-    top: 280px;
+    top: 0px;
     right: 0;
     left: 0;
     bottom: 0;
+    height: 16rem;
     z-index: -1;
     border-top: 1px thin var(--primary-color);
 }
